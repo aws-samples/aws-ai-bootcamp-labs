@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lexicon version="1.0" 
+      xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon 
+        http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd"
+      alphabet="ipa" xml:lang="en-GB">
+  <lexeme><grapheme>He</grapheme><alias>Helium̯</alias></lexeme>
+  <lexeme><grapheme>Li</grapheme><alias>Lithium</alias></lexeme>
+  <lexeme><grapheme>Be</grapheme><alias>Beryllium</alias></lexeme>
+  <lexeme><grapheme>Ne</grapheme><alias>Neon</alias></lexeme>
+  <lexeme><grapheme>Na</grapheme><alias>Sodium</alias></lexeme>
+  <lexeme><grapheme>Mg</grapheme><alias>Magnesium</alias></lexeme>
+  <lexeme><grapheme>Al</grapheme><alias>Aluminium</alias></lexeme>
+  <lexeme><grapheme>Si</grapheme><alias>Silicon</alias></lexeme>
+  <lexeme><grapheme>Cl</grapheme><alias>Chlorine</alias></lexeme>
+  <lexeme><grapheme>Ar</grapheme><alias>Argon</alias></lexeme>
+  <lexeme><grapheme>Ca</grapheme><alias>Calcium</alias></lexeme>
+  <lexeme><grapheme>Sc</grapheme><alias>Scandium</alias></lexeme>
+  <lexeme><grapheme>Ti</grapheme><alias>Titanium</alias></lexeme>
+  <lexeme><grapheme>Cr</grapheme><alias>Chromium</alias></lexeme>
+  <lexeme><grapheme>Mn</grapheme><alias>Manganese</alias></lexeme>
+  <lexeme><grapheme>Fe</grapheme><alias>Iron</alias></lexeme>
+  <lexeme><grapheme>Co</grapheme><alias>Cobalt</alias></lexeme>
+  <lexeme><grapheme>Ni</grapheme><alias>Nickel</alias></lexeme>
+  <lexeme><grapheme>Cu</grapheme><alias>Copper</alias></lexeme>
+  <lexeme><grapheme>Zn</grapheme><alias>Zinc</alias></lexeme>
+</lexicon>
