@@ -15,7 +15,7 @@ This library has a collection of Notebooks and code examples for AWS AI Bootcamp
 
 ### Launch EC2 instance using the deep learning AMI and open fashion MNIST MXNet demo
 
-1. Create EC2 IAM role for the workshop, either apply `AdministratorAccess` policy or use policies as described in each notebook
+1. Create EC2 IAM role for the workshop as described [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#create-iam-role). We will apply permission policies as documented in each notebook
 2. Launch EC2 Instance using the Ubuntu deep learning AMI in eu-west-1, Ireland (p2.xlarge - $0.972/hour) http://amzn.to/2j3FdOZ
 3. Connect via SSH and tunnel port 8888:
     * Linux, Mac:
