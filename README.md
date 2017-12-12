@@ -11,6 +11,8 @@ This library has a collection of Notebooks and code examples for AWS AI Bootcamp
 
 [Amazon Rekognition Demo Notebook](Notebooks/Rekognition_Demo.ipynb)
 
+[Amazon Comprehend Demo Notebook](Notebooks/Comprehend_Demo.ipynb)
+
 [Amazon Machine Learning Demo Notebook](Notebooks/AmazonML_Demo.ipynb)
 
 ### Launch EC2 instance using the deep learning AMI and open fashion MNIST MXNet demo
