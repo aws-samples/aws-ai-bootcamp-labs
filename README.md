@@ -15,6 +15,8 @@ This library has a collection of Notebooks and code examples for AWS AI Bootcamp
 
 [Amazon Machine Learning Demo Notebook](Notebooks/AmazonML_Demo.ipynb)
 
+[Serverless Predictions at Scale](serverless_predictions.MD)
+
 ### Launch EC2 instance using the deep learning AMI and open fashion MNIST MXNet demo
 
 1. Create EC2 IAM role for the workshop as described [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#create-iam-role). We will apply permission policies as documented in each notebook
