@@ -15,7 +15,7 @@
 3. Click on the role name ***CodeStarWorker-mxnet-resnet-CloudFormation*** and review the inline policy attached to the role.
 4. Over the course of the next couple of steps we are going to create an S3 bucket for storing model files. In order to govern these resources using CodeStar it is necessary to adjust the default policy. Click **Edit Policy** and add the following block to the “Statement” part inline policy. Make sure to replace the `${AWS::Region}` with the acronym of the region that you are using, e.g. eu-central-1, and the `${AWS::AccountId}` with your AWS Account ID, e.g. `123456789012`. Click **Save** to persist your changes to the inline policy. 
 
-```
+```json
 {
     "Action": [
         "s3:PutBucketPolicy"
@@ -31,7 +31,7 @@
 
 1. Open the ***template.yml*** file and add a S3 bucket resource. This bucket will later be used to store the pre-trained models. Our Lambda function will later download the models from this defined location to the function execution environment. Commit and push your changes to the CodeCommit repository. After you have pushed your changes CodePipeline picks up your changes and will create an S3 bucket which can be used to host pre-trained models. 
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform:
 - AWS::Serverless-2016-10-31
@@ -97,7 +97,7 @@ Outputs:
 
 The following code outlines CLI commands that can be used to automate the above steps on macOS/Linux. **Note: Make sure to configure the AWS CLI before executing those commands, e.g. set the region to the region where you created the CodeStar project.**
 
-```
+```bash
 # create temp. directory
 mkdir -p /tmp/resnet18
 # enter temp. directory
@@ -120,7 +120,7 @@ popd
 
 1. Create a file named ***lambda_function.py*** based on the source code given below. Add the file to the repository, push and commit the changes to the repository.
 
-```
+```python
 import os
 import boto3
 import json
@@ -220,7 +220,7 @@ def lambda_proxy_handler(event, context):
 4. On the build settings page update the image to be used by clicking the **Update image** button. Select **Specify a Docker image**, choose **Linux** as the "Environment type", **Other** as the "Custom image type" and ***amazonlinux:latest*** as the "Custom image ID". Click the **Update** button to apply the changes.
 5. Edit the ***buildspec.yml*** file to update the build specification. The specification installs dependencies to correctly package a ZIP containing the dependencies and execution code for our function code. Make sure to push and commit the changes to the repository.
 
-```
+```yaml
 version: 0.2
 
 phases:
@@ -285,7 +285,7 @@ artifacts:
 
 1. Open the ***template.yml*** file and add a function definition to serve predictions based on the pre-trained models.
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform:
 - AWS::Serverless-2016-10-31
